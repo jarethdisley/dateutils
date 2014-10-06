@@ -1,4 +1,4 @@
-mage: bradrydzewski/go
+mage: go1.3
 env:
   - GOPATH=/var/cache/drone
 script:
