@@ -2,7 +2,7 @@ image: go1.3
 env:
   - GOPATH=/var/cache/drone
 script:
-  - go get -d -v ./...
+  - go get launchpad.net/gocheck
   - go build
   - go test -v
 services:
