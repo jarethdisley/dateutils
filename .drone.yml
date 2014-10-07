@@ -3,8 +3,9 @@ env:
   - GOPATH=/var/cache/drone
 script:
   - go get launchpad.net/gocheck
+  - go get -v github.com/axw/gocov/gocov
   - go build
-  - go test -v
+  - gocov test | gocov report
 services:
   - redis
 notify:
