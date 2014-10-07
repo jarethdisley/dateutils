@@ -4,6 +4,7 @@ env:
 script:
   - go get launchpad.net/gocheck
   - go get -v github.com/axw/gocov/gocov
+  - export PATH=$PATH:$GOPATH/bin
   - go build
   - gocov test | gocov report
 services:
